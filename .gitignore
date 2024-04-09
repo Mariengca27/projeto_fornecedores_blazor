@@ -1,0 +1,47 @@
+# Arquivos de compilação
+*.dll
+*.exe
+*.pdb
+
+# Arquivos gerados pelo Visual Studio
+.vs/
+bin/
+obj/
+
+# Arquivos de configuração
+*.config
+*.json
+
+# Arquivos temporários
+*.bak
+*.tmp
+
+# Arquivos de log
+*.log
+
+# Arquivos de cache
+*.cache
+
+# Diretório de publicação
+publish/
+
+# Arquivos de dependências do NuGet
+packages/
+
+# Arquivos de usuário
+*.user
+
+# Arquivos de build do MSBuild
+*.msbuild
+
+# Arquivos de cache do ReSharper
+_ReSharper*/
+
+# Diretório de saída do Code Coverage
+.coverage/
+
+# Diretório de saída do Test Results
+TestResults/
+
+# Diretório de saída do Visual Studio
+.vscode/
