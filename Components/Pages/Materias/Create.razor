@@ -1,3 +1,30 @@
 @page "/material/create"
-
+@using fornecedores.Models
 <h1>Pagina Principal de Cadastro de Materiais</h1>
+
+<EditForm Model = "@Model" OnValidSubmit="HandleValidSubmit">
+<div class="mb-3"> 
+      <label for="Name" class="form-label">Nome Material</label>
+      <InputText @bind-Value="Model.Name" class="form-control" />
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+@code{
+
+public Material Model { get; set; } = new();
+
+protected override void OnInitialized()
+{
+    Model.Name = "Liga de Aluminio";
+}
+
+
+    private void HandleValidSubmit()
+    {
+        // Adicione o código para lidar com a submissão do formulário aqui
+    }
+
+
+
+}
